@@ -5,8 +5,8 @@ template <typename T>
 class ID {
     int id;
 public:
-    explicit ID<T>() : id(0) {}
-    explicit ID<T>(int value) : id(value) {}
+    explicit ID() : id(0) {}
+    explicit ID(int value) : id(value) {}
     operator int() const {
         return id;
     }

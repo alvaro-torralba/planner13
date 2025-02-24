@@ -51,7 +51,7 @@ class BreadthFirstSearch : public UnidirectionalSearch  {
       return 0;
   }
 
-  virtual void getPlan(const BDD &, int , int , std::vector <const GlobalOperator *> &) const {
+  virtual void getPlan(const BDD &, int , std::vector<OperatorID> &) const override {
   }
   BDD pop();
 
